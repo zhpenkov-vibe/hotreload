@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- SUBJECT: ⚡ Sunday 8 Nov ⚡ -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="x-apple-disable-message-reformatting">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+<title>Hot Reload</title>
+<style>
+:root { color-scheme: light dark; supported-color-schemes: light dark; }
+body { margin:0 !important; padding:0 !important; width:100% !important; }
+a { text-decoration: underline; }
+@media (prefers-color-scheme: dark) {
+  .hr-page { background-color:#111111 !important; }
+  .hr-card { background-color:#1C1C21 !important; border-color:#F5F5F5 !important; }
+  .hr-card-dash { background-color:#1C1C21 !important; border-color:#F5F5F5 !important; }
+  .hr-txt { color:#F5F5F5 !important; }
+  .hr-muted { color:#A1A1AA !important; }
+  .hr-candy { border-color:#F5F5F5 !important; }
+  .hr-shadow-y { box-shadow:8px 8px 0 #FF8FC7 !important; }
+  .hr-shadow { box-shadow:6px 6px 0 #FFE45C !important; }
+  .hr-tip { border-color:#FFE45C !important; box-shadow:6px 6px 0 #FFE45C !important; }
+}
+[data-ogsc] .hr-txt { color:#F5F5F5 !important; }
+[data-ogsc] .hr-muted { color:#A1A1AA !important; }
+[data-ogsb] .hr-page { background-color:#111111 !important; }
+[data-ogsb] .hr-card, [data-ogsb] .hr-card-dash { background-color:#1C1C21 !important; }
+@media screen and (max-width:620px) {
+  .hr-col { display:block !important; width:100% !important; padding:0 0 16px 0 !important; }
+  .hr-title { font-size:52px !important; }
+}
+</style>
+</head>
+<body class="hr-page" bgcolor="#FFF7E0" style="margin:0; padding:0; background-color:#FFF7E0;">
+<div style="display:none; max-height:0; overflow:hidden; mso-hide:all;">Next.js ships a Nov 3 security patch (one high severity), plus Firefox 159 and Chrome 155 land CSS wins.</div>
+<table role="presentation" class="hr-page" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFF7E0" style="background-color:#FFF7E0;">
+<tr><td align="center" style="padding:28px 16px;">
+<table role="presentation" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%; max-width:600px; margin:0 auto;">
+
+<!-- HEADER -->
+<tr><td class="hr-candy hr-shadow-y" bgcolor="#FFE45C" style="background-color:#FFE45C; border:3px solid #111111; border-radius:18px; box-shadow:8px 8px 0 #111111; padding:28px 30px;">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+<td bgcolor="#111111" style="background-color:#111111; border-radius:999px; padding:6px 12px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:12px; font-weight:700; color:#FFE45C; letter-spacing:0.04em;">ISSUE · SUNDAY 8 NOV</td>
+<td width="8" style="width:8px;"></td>
+<td bgcolor="#FFFFFF" style="background-color:#FFFFFF; border:2px solid #111111; border-radius:999px; padding:4px 12px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:12px; font-weight:700; color:#111111;">5 MIN READ</td>
+</tr></table>
+<h1 class="hr-title" style="margin:18px 0 12px; font-family:'Space Grotesk',Arial,Helvetica,sans-serif; font-size:68px; line-height:0.95; font-weight:700; letter-spacing:-0.03em; color:#111111;">Hot<br>Reload</h1>
+<p style="margin:0 0 16px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:14px; line-height:1.5; color:#111111;">// fresh frontend, design systems &amp; AI news, injected every morning without a full page refresh</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<td bgcolor="#111111" style="background-color:#111111; border-radius:10px; padding:12px 14px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:13px; line-height:1.6; color:#E5E5E5;"><span style="color:#7CFFB2;">$</span> <span style="color:#E5E5E5;">npm run morning</span><br><span style="color:#7CFFB2;">ready</span> <span style="color:#E5E5E5;">compiled 3 headlines, 20 updates, 0 warnings</span></td>
+</tr></table>
+</td></tr>
+
+<tr><td height="28" style="height:28px; font-size:0; line-height:0;">&nbsp;</td></tr>
+
+<!-- TOP THREE -->
+<tr><td class="hr-txt" style="font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:20px; font-weight:700; color:#111111; padding:0 0 14px;">&lt;TopThree /&gt;</td></tr>
+
+<tr><td class="hr-candy hr-shadow" bgcolor="#FF8FC7" style="background-color:#FF8FC7; border:3px solid #111111; border-radius:16px; box-shadow:6px 6px 0 #111111; padding:20px 22px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<td width="48" valign="top" style="width:48px; font-family:'Space Grotesk',Arial,Helvetica,sans-serif; font-size:44px; line-height:1; font-weight:700; color:#111111;">1</td>
+<td valign="top">
+<p style="word-break:break-word; overflow-wrap:break-word; margin:0 0 6px; font-family:'Space Grotesk',Arial,Helvetica,sans-serif; font-size:20px; line-height:1.25; font-weight:700; color:#111111;">Next.js November security release: patch to 16.4.5 / 15.5.29</p>
+<p style="word-break:break-word; overflow-wrap:break-word; margin:0 0 8px; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;">Seven vulnerabilities were fixed on Nov 3, one high severity: cross-tenant cache disclosure when unstable_cache and use cache are combined. If your docs site or app uses Cache Components with root parameters, this one is worth patching today.</p>
+<a href="https://nextjs.org/blog/november-2026-security-release" style="font-family:Inter,Arial,Helvetica,sans-serif; font-size:13px; font-weight:700; color:#111111; text-decoration:underline;">Read source →</a>
+</td></tr></table>
+</td></tr>
+<tr><td height="18" style="height:18px; font-size:0; line-height:0;">&nbsp;</td></tr>
+
+<tr><td class="hr-candy hr-shadow" bgcolor="#8FD3FF" style="background-color:#8FD3FF; border:3px solid #111111; border-radius:16px; box-shadow:6px 6px 0 #111111; padding:20px 22px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<td width="48" valign="top" style="width:48px; font-family:'Space Grotesk',Arial,Helvetica,sans-serif; font-size:44px; line-height:1; font-weight:700; color:#111111;">2</td>
+<td valign="top">
+<p style="word-break:break-word; overflow-wrap:break-word; margin:0 0 6px; font-family:'Space Grotesk',Arial,Helvetica,sans-serif; font-size:20px; line-height:1.25; font-weight:700; color:#111111;">Firefox 159 makes scoped registries and scroll-driven animations Baseline</p>
+<p style="word-break:break-word; overflow-wrap:break-word; margin:0 0 8px; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;">Scoped custom element registries and scroll-driven animations are now Baseline Newly available. For design-system teams shipping web components, that removes a major name-collision headache and enables CSS-only motion.</p>
+<a href="https://web.dev/blog/web-platform-10-2026" style="font-family:Inter,Arial,Helvetica,sans-serif; font-size:13px; font-weight:700; color:#111111; text-decoration:underline;">Read source →</a>
+</td></tr></table>
+</td></tr>
+<tr><td height="18" style="height:18px; font-size:0; line-height:0;">&nbsp;</td></tr>
+
+<tr><td class="hr-candy hr-shadow" bgcolor="#9FF0B5" style="background-color:#9FF0B5; border:3px solid #111111; border-radius:16px; box-shadow:6px 6px 0 #111111; padding:20px 22px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<td width="48" valign="top" style="width:48px; font-family:'Space Grotesk',Arial,Helvetica,sans-serif; font-size:44px; line-height:1; font-weight:700; color:#111111;">3</td>
+<td valign="top">
+<p style="word-break:break-word; overflow-wrap:break-word; margin:0 0 6px; font-family:'Space Grotesk',Arial,Helvetica,sans-serif; font-size:20px; line-height:1.25; font-weight:700; color:#111111;">Claude Docs, Slides and Design leave beta; Agent Skills goes to the Linux Foundation</p>
+<p style="word-break:break-word; overflow-wrap:break-word; margin:0 0 8px; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;">Anthropic moved its creation tools to general availability on every plan and donated the Agent Skills standard to a neutral foundation. Skills are becoming a shared format, which matters if you ship design-system guidance for coding agents.</p>
+<a href="https://www.orcarouter.ai/blog/claude-news-what-anthropic-shipped-in-october-2026" style="font-family:Inter,Arial,Helvetica,sans-serif; font-size:13px; font-weight:700; color:#111111; text-decoration:underline;">Read source →</a>
+</td></tr></table>
+</td></tr>
+
+<tr><td height="28" style="height:28px; font-size:0; line-height:0;">&nbsp;</td></tr>
+
+<!-- DESIGN SYSTEMS -->
+<tr><td class="hr-card" bgcolor="#FFFFFF" style="background-color:#FFFFFF; border:3px solid #111111; border-radius:16px; padding:22px 24px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<td class="hr-txt" style="font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:18px; font-weight:700; color:#111111;">&lt;DesignSystems /&gt;</td>
+<td align="right"><span style="display:inline-block; background-color:#FF8FC7; border:2px solid #111111; border-radius:6px; padding:3px 8px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:11px; font-weight:700; color:#111111;">--tokens</span></td>
+</tr></table>
+<p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Firefox 159</b> · Scoped custom element registries are on by default and Baseline Newly available, so web-component libraries can finally register same-named elements without colliding. <a class="hr-txt" href="https://web.dev/blog/web-platform-10-2026" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">CSS spacing</b> · Chrome 155 ships margin-trim, which strips child margins at a container edge and could retire a lot of :​first-​child/​:​last-​child overrides in layout primitives. <a class="hr-txt" href="https://web.dev/blog/web-platform-10-2026" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Typography</b> · Chrome 155 adds text-​decoration-​skip-​spaces for finer control of underlines under whitespace; Chrome-only for now, so treat it as progressive enhancement. <a class="hr-txt" href="https://web.dev/blog/web-platform-10-2026" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Grid lanes</b> · Safari 27.2 renames flow-tolerance to fit-tolerance for display: grid-lanes, keeping the old name as a deprecated alias; update any masonry-style layout tokens. <a class="hr-txt" href="https://web.dev/blog/web-platform-10-2026" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Quiet day</b> · No fresh Figma, Storybook, Style Dictionary or DTCG news found in the last 48 hours.</p>
+</td></tr>
+<tr><td height="18" style="height:18px; font-size:0; line-height:0;">&nbsp;</td></tr>
+
+<!-- FRONTEND -->
+<tr><td class="hr-card" bgcolor="#FFFFFF" style="background-color:#FFFFFF; border:3px solid #111111; border-radius:16px; padding:22px 24px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<td class="hr-txt" style="font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:18px; font-weight:700; color:#111111;">&lt;Frontend /&gt;</td>
+<td align="right"><span style="display:inline-block; background-color:#8FD3FF; border:2px solid #111111; border-radius:6px; padding:3px 8px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:11px; font-weight:700; color:#111111;">--ship-it</span></td>
+</tr></table>
+<p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Next.js 16.4.5</b> · The November 3 security release patches seven issues, one rated high: cross-tenant cache disclosure when unstable_cache and use cache are combined; upgrade 16.x to 16.4.5 and 15.x to 15.5.29. <a class="hr-txt" href="https://nextjs.org/blog/november-2026-security-release" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Next.js 16.4.4</b> · A backport fixes Turbopack startup CSS updates and swaps jsonwebtoken for fast-jwt. <a class="hr-txt" href="https://releases.sh/vercel/nextjs.md" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Bundle Analyzer</b> · Next.js 16.4 adds route summaries, snapshot diffing and a critical-path filter to next analyze, plus an agent skill that found nearly 2 MB of avoidable JavaScript across v0 and vercel.com. <a class="hr-txt" href="https://nextjs.org/blog/ship-less-javascript-with-ai" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Firefox 159</b> · Scroll-driven animations are on by default and now Baseline Newly available, which makes CSS-only scroll effects safe to ship broadly. <a class="hr-txt" href="https://web.dev/blog/web-platform-10-2026" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Firefox 158</b> · CSS typed arithmetic in calc() is Baseline Newly available, so dividing same-type values to get a unitless number works across browsers; JPEG XL is also now on by default in Chrome 155 and Firefox 158. <a class="hr-txt" href="https://web.dev/blog/web-platform-10-2026" style="color:#111111; text-decoration:underline;">source</a></p>
+</td></tr>
+<tr><td height="18" style="height:18px; font-size:0; line-height:0;">&nbsp;</td></tr>
+
+<!-- AI -->
+<tr><td class="hr-card" bgcolor="#FFFFFF" style="background-color:#FFFFFF; border:3px solid #111111; border-radius:16px; padding:22px 24px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<td class="hr-txt" style="font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:18px; font-weight:700; color:#111111;">&lt;AI /&gt;</td>
+<td align="right"><span style="display:inline-block; background-color:#9FF0B5; border:2px solid #111111; border-radius:6px; padding:3px 8px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:11px; font-weight:700; color:#111111;">--prompt</span></td>
+</tr></table>
+<p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Claude</b> · Docs, Slides and Design left beta on every plan including Free on Oct 8, while Dashboards and Motion entered beta. <a class="hr-txt" href="https://www.orcarouter.ai/blog/claude-news-what-anthropic-shipped-in-october-2026" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Agent Skills</b> · Anthropic donated the Agent Skills standard to the Agentic AI Foundation under the Linux Foundation on Oct 22. <a class="hr-txt" href="https://www.orcarouter.ai/blog/claude-news-what-anthropic-shipped-in-october-2026" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Claude Code Review</b> · Code Review became generally available on Team and Enterprise plans on Oct 15. <a class="hr-txt" href="https://www.orcarouter.ai/blog/claude-news-what-anthropic-shipped-in-october-2026" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Haiku 5.5</b> · A small Claude model aimed at summarisation, subagents and browser use arrived on Oct 7. <a class="hr-txt" href="https://www.orcarouter.ai/blog/claude-news-what-anthropic-shipped-in-october-2026" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">GPT-6 Astra</b> · OpenAI released it on Sept 3 at $10/$50 per million tokens; its own numbers show it narrowly ahead on coding and terminal tasks but behind Claude Fable 5.1 on general reasoning, so treat the gaps as directional. <a class="hr-txt" href="https://datanorth.ai/news/openai-launches-gpt-6-astra" style="color:#111111; text-decoration:underline;">source</a></p>
+</td></tr>
+<tr><td height="18" style="height:18px; font-size:0; line-height:0;">&nbsp;</td></tr>
+
+<!-- OPEN SOURCE -->
+<tr><td class="hr-card" bgcolor="#FFFFFF" style="background-color:#FFFFFF; border:3px solid #111111; border-radius:16px; padding:20px 22px;">
+<p class="hr-txt" style="margin:0; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:15px; font-weight:700; color:#111111;">&lt;OpenSource /&gt;</p>
+<p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Repo</b> · next-​bundle-​optimizer is an installable agent skill (npx skills add vercel/next.js) that maps Turbopack module graphs and suggests import boundaries to defer. <a class="hr-txt" href="https://www.skills.sh/vercel/next.js/next-bundle-optimizer" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Read</b> · How the Next.js team used an agent to work through and close 1,500 GitHub issues in one month, a useful pattern for design-system maintainers drowning in backlog. <a class="hr-txt" href="https://nextjs.org/blog/how-we-closed-1500-github-issues" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Listen</b> · No new podcast or newsletter worth flagging today.</p>
+</td></tr>
+<tr><td height="18" style="height:18px; font-size:0; line-height:0;">&nbsp;</td></tr>
+
+<!-- COMMUNITY -->
+<tr><td class="hr-card" bgcolor="#FFFFFF" style="background-color:#FFFFFF; border:3px solid #111111; border-radius:16px; padding:20px 22px;">
+<p class="hr-txt" style="margin:0; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:15px; font-weight:700; color:#111111;">&lt;Community /&gt;</p>
+<p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Events</b> · Web Summit Lisbon runs Nov 9-12; reactjsday (Verona) is Nov 19 and Svelte Summit (Ljubljana) is Nov 19-20; React Day Berlin follows Dec 4-7. <a class="hr-txt" href="https://dev.events/EU/web" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Market</b> · No fresh frontend job or salary data found today.</p>
+</td></tr>
+<tr><td height="18" style="height:18px; font-size:0; line-height:0;">&nbsp;</td></tr>
+
+<!-- TIP OF THE DAY -->
+<tr><td class="hr-tip" bgcolor="#111111" style="background-color:#111111; border:3px solid #111111; border-radius:16px; box-shadow:6px 6px 0 #FFE45C; padding:22px 24px;">
+<p style="margin:0 0 10px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:12px; font-weight:700; color:#FFE45C;">/* tip of the day */</p>
+<p style="word-break:break-word; overflow-wrap:break-word; margin:0 0 12px; font-family:Inter,Arial,Helvetica,sans-serif; font-size:15px; line-height:1.55; color:#FFFFFF;">Use margin-trim on card and stack primitives so the first and last child never leave stray spacing at the container edge.</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<td bgcolor="#2A2A30" style="background-color:#2A2A30; border-radius:8px; padding:12px 14px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:13px; line-height:1.6; color:#E5E5E5;"><pre style="margin:0; white-space:pre-wrap; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:13px; line-height:1.6; color:#E5E5E5;">.card {
+  margin-trim: block;
+}
+.card &gt; h2 {
+  margin-block: 1rem;
+}</pre></td>
+</tr></table>
+</td></tr>
+<tr><td height="22" style="height:22px; font-size:0; line-height:0;">&nbsp;</td></tr>
+
+<!-- SIDE PROJECT -->
+<tr><td class="hr-candy" bgcolor="#C9B8FF" style="background-color:#C9B8FF; border:3px solid #111111; border-radius:16px; padding:20px 22px;">
+<p style="margin:0 0 8px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:12px; font-weight:700; color:#111111;">git checkout -b side-project</p>
+<p style="word-break:break-word; overflow-wrap:break-word; margin:0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;">Build a tiny CLI that reads a DTCG tokens.json and prints a contrast report (WCAG ratios) for every foreground/​background pair, then fails CI when one drops below 4.5:1.</p>
+</td></tr>
+<tr><td height="18" style="height:18px; font-size:0; line-height:0;">&nbsp;</td></tr>
+
+<!-- QUOTE -->
+<tr><td class="hr-candy" bgcolor="#FFE45C" style="background-color:#FFE45C; border:3px solid #111111; border-radius:16px; padding:20px 22px;">
+<p style="margin:0 0 8px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:12px; font-weight:700; color:#111111;">console.log(quote)</p>
+<p style="word-break:break-word; overflow-wrap:break-word; margin:0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:15px; line-height:1.55; font-style:italic; color:#111111;">Link of the day: the Next.js Bundle Analyzer guide, a quick way to see which design-system imports are bloating your routes.</p>
+</td></tr>
+
+
+<!-- FOOTER -->
+<tr><td align="center" style="padding:30px 8px 8px;">
+<p class="hr-txt" style="margin:0 0 6px; font-family:'Space Grotesk',Arial,Helvetica,sans-serif; font-size:22px; font-weight:700; color:#111111;">That's the build. See you tomorrow.</p>
+<p class="hr-muted" style="margin:0; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:12px; line-height:1.6; color:#3F3F46;">Hot Reload · daily at 08:00 Sofia time</p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESCRIPTION}}">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@700&display=swap">
+<link rel="stylesheet" href="../assets/hub.css">
+</head>
+<body>
+<nav class="bar" aria-label="Issue navigation">
+  <div class="bar-inner">
+    <a class="btn" href="../">← <span class="hide-sm">Archive</span></a>
+    <h1 class="bar-title">⚡ {{LABEL}}</h1>
+    <div class="nav">
+      {{OLDER}}
+      {{NEWER}}
+      <button class="btn hide-sm" type="button" data-theme-toggle>☾ dark</button>
+      <a class="btn hide-sm" href="../issues/{{DATE}}.html" target="_blank" rel="noopener">raw ↗</a>
+    </div>
+  </div>
+</nav>
+<main>
+  <iframe class="frame" src="../issues/{{DATE}}.html" title="Hot Reload, {{LABEL}}"></iframe>
+</main>
+<script src="../assets/hub.js"></script>
+</body>
+</html>

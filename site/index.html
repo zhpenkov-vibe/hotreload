@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hot Reload Archive</title>
+<meta name="description" content="Every issue of Hot Reload: fresh frontend, design systems and AI news, every morning.">
+<link rel="alternate" type="application/rss+xml" title="Hot Reload" href="./feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@700&display=swap">
+<link rel="stylesheet" href="./assets/hub.css">
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <div>
+      <span class="pill">ARCHIVE · {{COUNT}} ISSUES</span>
+      <h1>Hot<br>Reload</h1>
+      <p>// fresh frontend, design systems &amp; AI news, injected every morning without a full page refresh</p>
+      <div class="term"><b>$</b> npm run archive<br><b>ready</b> served {{COUNT}} issues, 0 warnings</div>
+    </div>
+    <a class="latest" href="{{LATEST_HREF}}">
+      <span class="latest-kicker"><span>&lt;Latest /&gt;</span><span class="tag">{{LATEST_LABEL}}</span></span>
+      <ol>{{LATEST_TOP}}</ol>
+      <span class="go">Read the issue →</span>
+    </a>
+  </header>
+
+  <div class="toolbar">
+    <h2>&lt;AllIssues /&gt;</h2>
+    <label class="search">
+      <span hidden>Search every issue</span>
+      <input id="q" type="search" placeholder="search every issue: storybook, tokens…" autocomplete="off">
+    </label>
+    <button class="btn" type="button" data-theme-toggle>☾ dark</button>
+  </div>
+  <p class="search-status" aria-live="polite"></p>
+
+  {{ISSUES}}
+
+  <footer class="foot">
+    That's the build. New issue daily at 08:00 Sofia time · <a href="./latest/">latest</a> · <a href="./feed.xml">rss</a>
+  </footer>
+</main>
+<script src="./assets/hub.js"></script>
+</body>
+</html>
