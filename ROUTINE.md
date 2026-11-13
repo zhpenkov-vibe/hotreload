@@ -1,16 +1,14 @@
 # Routine integration
 
-The "Hot Reload newsletter" routine (daily 07:20 Sofia) adds each issue here. Paste the block below into the routine prompt, between step 4 (Save to Drive) and the final "Finish with…" line.
+The "Hot Reload newsletter" routine (daily 07:20 Sofia) adds each issue here. The routine prompt already contains the block below (it was added on 2026-11-13). It runs in a session with no git access to this repo, so it writes through the GitHub connector that is attached to the routine. For reference, the block sits between step 4 (Save to Drive) and the final "Finish with…" line.
 
 ```markdown
-## 5. Publish to the hub archive (only after the Drive save succeeded)
-The GitHub repo zhpenkov-vibe/hotreload keeps every issue for the hub site. Add today's issue to it. This step must never delay, change or replace the Drive delivery.
-- Load the tool with ToolSearch: "select:mcp__claude-code-remote__add_repo" (if not found, search "add_repo"). Call add_repo with owner "zhpenkov-vibe", repo "hotreload", access "push", and follow its instructions: ONE inline clone, e.g. `git clone --depth 1 https://github.com/zhpenkov-vibe/hotreload /home/claude/hotreload` (if that directory exists and is not a clone, use /home/claude/hotreload-repo). On HTTP 429 wait 5s and retry once. Then call register_repo_root with the path if it accepts it (ignore a failure).
-- In the clone: `git config user.name "zhpenkov-vibe"` and `git config user.email "juliqn35@gmail.com"`. Never use another email in commits.
-- Copy the exact file you uploaded: `cp issue.html issues/<YYYY-MM-DD>.html` (Sofia date, e.g. issues/2026-11-12.html). Do not edit it. If that file already exists with identical content, skip the rest of this step.
-- `git add issues && git commit -m "issue: <YYYY-MM-DD>"` (end the message with the attribution lines your system context asks for, if any), then `git push origin main`. If the push is rejected as non-fast-forward, `git pull --rebase origin main` and push once more.
-- If pushing to main is refused by the proxy or permissions, fall back once to the contents API: `gh api -X PUT repos/zhpenkov-vibe/hotreload/contents/issues/<YYYY-MM-DD>.html -f message="issue: <YYYY-MM-DD>" -f branch=main -f content="$(base64 -w0 issue.html)"`.
-- Only touch issues/. Never change site/, scripts/ or workflows, never force-push, never open a PR for this.
+## 5. Publish to the hub site (only after the Drive save succeeded)
+The public GitHub repo zhpenkov-vibe/hotreload holds every issue for the hub site (https://zhpenkov-vibe.github.io/hotreload/); a commit to main redeploys it automatically. Add today's issue with the GitHub CONNECTOR. Do NOT clone, and do not use git, gh or add_repo: this session has no git access to the repo, only the connector. This step must never delay, change or replace the Drive delivery.
+- Load the tools with ToolSearch: "select:mcp__github__create_or_update_file,mcp__github__get_file_contents" (if not found, search "github create_or_update_file").
+- Call mcp__github__create_or_update_file with owner "zhpenkov-vibe", repo "hotreload", branch "main", path "issues/<YYYY-MM-DD>.html" (Sofia date, e.g. issues/2026-11-14.html), message "issue: <YYYY-MM-DD>", and content = the full text of issue.html exactly as uploaded to Drive (plain text, not base64; do not edit it).
+- If it fails because the file already exists, call mcp__github__get_file_contents for that path with ref "main". If its content is identical, the hub is already up to date. Otherwise call create_or_update_file once more with the sha it reported.
+- Only ever write issues/<date>.html. Never touch any other file, never open a PR.
 - If anything here fails, stop retrying and add one line "Hub not updated: <exact error>" to your final summary.
 
 Finish with a 2–3 line summary of today's top three so the push notification is useful. Add "Hub updated" or the "Hub not updated" line at the end.
