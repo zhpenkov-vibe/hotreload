@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- SUBJECT: ⚡ Friday 13 Nov ⚡ -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="x-apple-disable-message-reformatting">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+<title>Hot Reload</title>
+<style>
+:root { color-scheme: light dark; supported-color-schemes: light dark; }
+body { margin:0 !important; padding:0 !important; width:100% !important; }
+a { text-decoration: underline; }
+@media (prefers-color-scheme: dark) {
+  .hr-page { background-color:#111111 !important; }
+  .hr-card { background-color:#1C1C21 !important; border-color:#F5F5F5 !important; }
+  .hr-card-dash { background-color:#1C1C21 !important; border-color:#F5F5F5 !important; }
+  .hr-txt { color:#F5F5F5 !important; }
+  .hr-muted { color:#A1A1AA !important; }
+  .hr-candy { border-color:#F5F5F5 !important; }
+  .hr-shadow-y { box-shadow:8px 8px 0 #FF8FC7 !important; }
+  .hr-shadow { box-shadow:6px 6px 0 #FFE45C !important; }
+  .hr-tip { border-color:#FFE45C !important; box-shadow:6px 6px 0 #FFE45C !important; }
+}
+[data-ogsc] .hr-txt { color:#F5F5F5 !important; }
+[data-ogsc] .hr-muted { color:#A1A1AA !important; }
+[data-ogsb] .hr-page { background-color:#111111 !important; }
+[data-ogsb] .hr-card, [data-ogsb] .hr-card-dash { background-color:#1C1C21 !important; }
+@media screen and (max-width:620px) {
+  .hr-col { display:block !important; width:100% !important; padding:0 0 16px 0 !important; }
+  .hr-title { font-size:52px !important; }
+}
+</style>
+</head>
+<body class="hr-page" bgcolor="#FFF7E0" style="margin:0; padding:0; background-color:#FFF7E0;">
+<div style="display:none; max-height:0; overflow:hidden; mso-hide:all;">Node.js patches seven high-severity flaws, Storybook 11 beta lands, Google ships a Decisions API.</div>
+<table role="presentation" class="hr-page" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFF7E0" style="background-color:#FFF7E0;">
+<tr><td align="center" style="padding:28px 16px;">
+<table role="presentation" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%; max-width:600px; margin:0 auto;">
+
+<!-- HEADER -->
+<tr><td class="hr-candy hr-shadow-y" bgcolor="#FFE45C" style="background-color:#FFE45C; border:3px solid #111111; border-radius:18px; box-shadow:8px 8px 0 #111111; padding:28px 30px;">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+<td bgcolor="#111111" style="background-color:#111111; border-radius:999px; padding:6px 12px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:12px; font-weight:700; color:#FFE45C; letter-spacing:0.04em;">ISSUE · FRIDAY 13 NOV</td>
+<td width="8" style="width:8px;"></td>
+<td bgcolor="#FFFFFF" style="background-color:#FFFFFF; border:2px solid #111111; border-radius:999px; padding:4px 12px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:12px; font-weight:700; color:#111111;">5 MIN READ</td>
+</tr></table>
+<h1 class="hr-title" style="margin:18px 0 12px; font-family:'Space Grotesk',Arial,Helvetica,sans-serif; font-size:68px; line-height:0.95; font-weight:700; letter-spacing:-0.03em; color:#111111;">Hot<br>Reload</h1>
+<p style="margin:0 0 16px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:14px; line-height:1.5; color:#111111;">// fresh frontend, design systems &amp; AI news, injected every morning without a full page refresh</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<td bgcolor="#111111" style="background-color:#111111; border-radius:10px; padding:12px 14px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:13px; line-height:1.6; color:#E5E5E5;"><span style="color:#7CFFB2;">$</span> <span style="color:#E5E5E5;">npm run morning</span><br><span style="color:#7CFFB2;">ready</span> <span style="color:#E5E5E5;">compiled 3 headlines, 14 updates, 0 warnings</span></td>
+</tr></table>
+</td></tr>
+
+<tr><td height="28" style="height:28px; font-size:0; line-height:0;">&nbsp;</td></tr>
+
+<!-- TOP THREE -->
+<tr><td class="hr-txt" style="font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:20px; font-weight:700; color:#111111; padding:0 0 14px;">&lt;TopThree /&gt;</td></tr>
+
+<tr><td class="hr-candy hr-shadow" bgcolor="#FF8FC7" style="background-color:#FF8FC7; border:3px solid #111111; border-radius:16px; box-shadow:6px 6px 0 #111111; padding:20px 22px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<td width="48" valign="top" style="width:48px; font-family:'Space Grotesk',Arial,Helvetica,sans-serif; font-size:44px; line-height:1; font-weight:700; color:#111111;">1</td>
+<td valign="top">
+<p style="word-break:break-word; overflow-wrap:break-word; margin:0 0 6px; font-family:'Space Grotesk',Arial,Helvetica,sans-serif; font-size:20px; line-height:1.25; font-weight:700; color:#111111;">Node.js patches seven high-severity flaws in the 22, 24 and 26 lines</p>
+<p style="word-break:break-word; overflow-wrap:break-word; margin:0 0 8px; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;">The Nov 11 releases (22.23.5, 24.22.3 and 26.13.1) fix seven high-severity issues, including a TLS use-after-free that can leak server heap, even TLS private keys, into HTTPS response bodies, plus several HTTP/2 crashes and a TLS 1.2 renegotiation bypass of per-host client certificates. If your docs site, Storybook host or SSR app runs on Node, upgrade now, because end-of-life lines get no patch.</p>
+<a href="https://nodejs.org/en/blog/vulnerability/november-2026-security-releases" style="font-family:Inter,Arial,Helvetica,sans-serif; font-size:13px; font-weight:700; color:#111111; text-decoration:underline;">Read source →</a>
+</td></tr></table>
+</td></tr>
+<tr><td height="18" style="height:18px; font-size:0; line-height:0;">&nbsp;</td></tr>
+
+<tr><td class="hr-candy hr-shadow" bgcolor="#8FD3FF" style="background-color:#8FD3FF; border:3px solid #111111; border-radius:16px; box-shadow:6px 6px 0 #111111; padding:20px 22px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<td width="48" valign="top" style="width:48px; font-family:'Space Grotesk',Arial,Helvetica,sans-serif; font-size:44px; line-height:1; font-weight:700; color:#111111;">2</td>
+<td valign="top">
+<p style="word-break:break-word; overflow-wrap:break-word; margin:0 0 6px; font-family:'Space Grotesk',Arial,Helvetica,sans-serif; font-size:20px; line-height:1.25; font-weight:700; color:#111111;">Update: Storybook 11 beta adds agent skills and a headless CLI</p>
+<p style="word-break:break-word; overflow-wrap:break-word; margin:0 0 8px; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;">The beta post (Nov 9, updated Nov 10) details official ui-workflow and component-docs agent skills, a headless tools command with docs list and test run, fully type-safe CSF 4 stories and a package about 25% smaller, and it aims for a December release rather than the Nov 10 date in the earlier plan. For a design-systems team it makes your component docs something agents can query directly, so plan the upgrade branch for next month.</p>
+<a href="https://storybook.js.org/blog/storybook-11-beta/" style="font-family:Inter,Arial,Helvetica,sans-serif; font-size:13px; font-weight:700; color:#111111; text-decoration:underline;">Read source →</a>
+</td></tr></table>
+</td></tr>
+<tr><td height="18" style="height:18px; font-size:0; line-height:0;">&nbsp;</td></tr>
+
+<tr><td class="hr-candy hr-shadow" bgcolor="#9FF0B5" style="background-color:#9FF0B5; border:3px solid #111111; border-radius:16px; box-shadow:6px 6px 0 #111111; padding:20px 22px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<td width="48" valign="top" style="width:48px; font-family:'Space Grotesk',Arial,Helvetica,sans-serif; font-size:44px; line-height:1; font-weight:700; color:#111111;">3</td>
+<td valign="top">
+<p style="word-break:break-word; overflow-wrap:break-word; margin:0 0 6px; font-family:'Space Grotesk',Arial,Helvetica,sans-serif; font-size:20px; line-height:1.25; font-weight:700; color:#111111;">Google launches the Gemini Decisions API at $0.10 per million input tokens</p>
+<p style="word-break:break-word; overflow-wrap:break-word; margin:0 0 8px; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;">Announced Nov 11, the gemini-decision-1 model scores up to 1,000 yes/no, multiple-choice or rubric questions about one multimodal input in a single pass and returns confidence scores, with 150 to 250 ms end-to-end latency and no charge for output tokens, per Google. It suits routing, triage and classification, such as labelling component-request issues or screenshots, though the speed and cost figures are Google&#x27;s own.</p>
+<a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/" style="font-family:Inter,Arial,Helvetica,sans-serif; font-size:13px; font-weight:700; color:#111111; text-decoration:underline;">Read source →</a>
+</td></tr></table>
+</td></tr>
+
+<tr><td height="28" style="height:28px; font-size:0; line-height:0;">&nbsp;</td></tr>
+
+<!-- DESIGN SYSTEMS -->
+<tr><td class="hr-card" bgcolor="#FFFFFF" style="background-color:#FFFFFF; border:3px solid #111111; border-radius:16px; padding:22px 24px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<td class="hr-txt" style="font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:18px; font-weight:700; color:#111111;">&lt;DesignSystems /&gt;</td>
+<td align="right"><span style="display:inline-block; background-color:#FF8FC7; border:2px solid #111111; border-radius:6px; padding:3px 8px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:11px; font-weight:700; color:#111111;">--tokens</span></td>
+</tr></table>
+<p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Update: Astryx</b> · Releases 0.7.1 to 0.7.13 of Meta&#x27;s open-sourced React design system add Lightbox gestures, reorderable lists and table virtualization. <a class="hr-txt" href="https://github.com/meta/astryx/releases" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Preact 11.2</b> · Released Nov 6, it supports scoped custom element registries when rendering into shadow roots, the feature Firefox 159 made Baseline, and trims the core, hooks and compat bundles. <a class="hr-txt" href="https://github.com/preactjs/preact/releases/tag/11.2.0" style="color:#111111; text-decoration:underline;">source</a></p>
+</td></tr>
+<tr><td height="18" style="height:18px; font-size:0; line-height:0;">&nbsp;</td></tr>
+
+<!-- FRONTEND -->
+<tr><td class="hr-card" bgcolor="#FFFFFF" style="background-color:#FFFFFF; border:3px solid #111111; border-radius:16px; padding:22px 24px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<td class="hr-txt" style="font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:18px; font-weight:700; color:#111111;">&lt;Frontend /&gt;</td>
+<td align="right"><span style="display:inline-block; background-color:#8FD3FF; border:2px solid #111111; border-radius:6px; padding:3px 8px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:11px; font-weight:700; color:#111111;">--ship-it</span></td>
+</tr></table>
+<p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Prettier 3.10</b> · A new official @prettier/​plugin-​yuku adds yuku and yuku-ts parsers (installed separately), alongside new Flow syntax and CSS fixes such as keeping the leading + in :nth-child(+3n+2). <a class="hr-txt" href="https://prettier.io/blog/2026/11/11/3.10.0" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Rolldown 1.3</b> · Per This Week In React, it adds experimental import attributes and an agent-friendly build report. <a class="hr-txt" href="https://github.com/rolldown/rolldown/releases/tag/v1.3.0" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Zustand 5.1</b> · Adds async persist storage, an awaitable rehydrate() and Redux DevTools dispatch support. <a class="hr-txt" href="https://github.com/pmndrs/zustand/releases/tag/v5.1.0" style="color:#111111; text-decoration:underline;">source</a></p>
+</td></tr>
+<tr><td height="18" style="height:18px; font-size:0; line-height:0;">&nbsp;</td></tr>
+
+<!-- AI -->
+<tr><td class="hr-card" bgcolor="#FFFFFF" style="background-color:#FFFFFF; border:3px solid #111111; border-radius:16px; padding:22px 24px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<td class="hr-txt" style="font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:18px; font-weight:700; color:#111111;">&lt;AI /&gt;</td>
+<td align="right"><span style="display:inline-block; background-color:#9FF0B5; border:2px solid #111111; border-radius:6px; padding:3px 8px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:11px; font-weight:700; color:#111111;">--prompt</span></td>
+</tr></table>
+<p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Update: Claude Code 2.1.321</b> · Makes Fable 5.2 (claude-fable-5-2, 1M context, $8 input and $40 output per million tokens) the default Fable model and fixes MCP OAuth secrets being sent to another host on redirects; 2.1.322 on Nov 10 adds fast mode on Vertex. <a class="hr-txt" href="https://github.com/anthropics/claude-code/releases" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">ERNIE 5.5 Flash Preview</b> · Baidu previewed a post-trained 280B-parameter model with 14B active and a 1M-token context, aimed at coding, 3D modeling and knowledge work (Nov 11). <a class="hr-txt" href="https://ernie.baidu.com/release/ernie-5-5-flash-preview/" style="color:#111111; text-decoration:underline;">source</a></p>
+</td></tr>
+<tr><td height="18" style="height:18px; font-size:0; line-height:0;">&nbsp;</td></tr>
+
+<!-- OPEN SOURCE -->
+<tr><td class="hr-card" bgcolor="#FFFFFF" style="background-color:#FFFFFF; border:3px solid #111111; border-radius:16px; padding:20px 22px;">
+<p class="hr-txt" style="margin:0; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:15px; font-weight:700; color:#111111;">&lt;OpenSource /&gt;</p>
+<p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Repo</b> · dx-styles by Anton Evzhakov builds typed token contracts and recipes on wyw-in-js, the Linaria engine, extracting CSS at build time; 1.5 cut warm builds 49% to 56% on its generated test scene and ships a public benchmark repo (the page states no licence, so check the repo). <a class="hr-txt" href="https://dx-styles.dev/blog/dx-styles-1-5-build-time/" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Read</b> · The Node.js 27 alpha notes on V8 15.6 list Math.sumPrecise and Iterator.zip, but also a new structuredClone and postMessage serialization format that older Node releases cannot read, so check mixed-version workers. <a class="hr-txt" href="https://nodejs.org/en/blog/announcements/notable-v8-changes-from-node-js-26-to-27-alpha" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Listen</b> · Design Systems News is PJ Onori&#x27;s weekly editorial, and the week of Nov 8 argues that design-system guidelines should be written by humans and asks what AI-ready really means. <a class="hr-txt" href="https://designsystems.news/" style="color:#111111; text-decoration:underline;">source</a></p>
+</td></tr>
+<tr><td height="18" style="height:18px; font-size:0; line-height:0;">&nbsp;</td></tr>
+
+<!-- COMMUNITY -->
+<tr><td class="hr-card" bgcolor="#FFFFFF" style="background-color:#FFFFFF; border:3px solid #111111; border-radius:16px; padding:20px 22px;">
+<p class="hr-txt" style="margin:0; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:15px; font-weight:700; color:#111111;">&lt;Community /&gt;</p>
+<p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Events</b> · ConFoo Montreal runs Feb 24-26, 2027; its call for papers closed on Sep 20, 2026. <a class="hr-txt" href="https://www.confoo.ca/en/2027/call-for-papers" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Events</b> · Smashing Conference Freiburg is Sep 6-9, 2027 and also runs online; the page lists no call for speakers. <a class="hr-txt" href="https://smashingconf.com/freiburg-2027" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Survey</b> · The State of JavaScript 2026 survey is open for responses. <a class="hr-txt" href="https://survey.devographics.com/en-US/survey/state-of-js/2026?source=thisweekinreact" style="color:#111111; text-decoration:underline;">source</a></p><p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:12px 0 0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;"><b class="hr-txt" style="color:#111111;">Market</b> · Quiet day · Nothing new in this area.</p>
+</td></tr>
+<tr><td height="18" style="height:18px; font-size:0; line-height:0;">&nbsp;</td></tr>
+
+<!-- TIP OF THE DAY -->
+<tr><td class="hr-tip" bgcolor="#111111" style="background-color:#111111; border:3px solid #111111; border-radius:16px; box-shadow:6px 6px 0 #FFE45C; padding:22px 24px;">
+<p style="margin:0 0 10px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:12px; font-weight:700; color:#FFE45C;">/* tip of the day */</p>
+<p style="word-break:break-word; overflow-wrap:break-word; margin:0 0 12px; font-family:Inter,Arial,Helvetica,sans-serif; font-size:15px; line-height:1.55; color:#FFFFFF;">Use @starting-style with transition-behavior allow-discrete to animate a dialog in and out with no JavaScript.</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<td bgcolor="#2A2A30" style="background-color:#2A2A30; border-radius:8px; padding:12px 14px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:13px; line-height:1.6; color:#E5E5E5;"><pre style="margin:0; white-space:pre-wrap; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:13px; line-height:1.6; color:#E5E5E5;">dialog { opacity: 0;
+  transition: opacity .2s,
+    display .2s allow-discrete; }
+dialog[open] { opacity: 1; }
+@starting-style {
+  dialog[open] { opacity: 0; } }</pre></td>
+</tr></table>
+</td></tr>
+<tr><td height="22" style="height:22px; font-size:0; line-height:0;">&nbsp;</td></tr>
+
+<!-- SIDE PROJECT -->
+<tr><td class="hr-candy" bgcolor="#C9B8FF" style="background-color:#C9B8FF; border:3px solid #111111; border-radius:16px; padding:20px 22px;">
+<p style="margin:0 0 8px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:12px; font-weight:700; color:#111111;">git checkout -b side-project</p>
+<p style="word-break:break-word; overflow-wrap:break-word; margin:0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;">Install the Storybook 11 beta on a branch of your library, run the new headless docs list and docs show commands, and write down every component an agent could not find or describe; then fix those gaps in your docs and stories.</p>
+</td></tr>
+<tr><td height="18" style="height:18px; font-size:0; line-height:0;">&nbsp;</td></tr>
+
+<!-- QUOTE -->
+<tr><td class="hr-candy" bgcolor="#FFE45C" style="background-color:#FFE45C; border:3px solid #111111; border-radius:16px; padding:20px 22px;">
+<p style="margin:0 0 8px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:12px; font-weight:700; color:#111111;">console.log(quote)</p>
+<p style="word-break:break-word; overflow-wrap:break-word; margin:0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:15px; line-height:1.55; font-style:italic; color:#111111;">We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. - Donald Knuth</p>
+</td></tr>
+
+<!-- FRIDAY_START -->
+<tr><td height="18" style="height:18px; font-size:0; line-height:0;">&nbsp;</td></tr>
+<tr><td class="hr-card-dash" bgcolor="#FFFFFF" style="background-color:#FFFFFF; border:3px dashed #111111; border-radius:16px; padding:20px 22px;">
+<p class="hr-txt" style="margin:0 0 8px; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:12px; font-weight:700; color:#111111;">if (today === 'Friday') deepDive()</p>
+<p class="hr-txt" style="word-break:break-word; overflow-wrap:break-word; margin:0; font-family:Inter,Arial,Helvetica,sans-serif; font-size:14px; line-height:1.55; color:#111111;">The e18e community launched a Framework Performance project that benchmarks Nuxt, Next.js, TanStack Start, Solid Start, Astro, SvelteKit and React Router on DevTime costs (installs, builds, dev-server startup) and RunTime behaviour (rendering, load, SSR throughput), with HTTP Archive Core Web Vitals alongside. It has already driven upstream fixes, including React&#x27;s RSC payload parsing getting about 75% faster and Solid 2.0&#x27;s SSR load test rising from 170 to 280 requests per second. The authors warn that no single metric settles a framework choice, which makes it a useful reference before your next docs-site or starter decision. <a class="hr-txt" href="https://e18e.dev/blog/launching-the-framework-performance-project.html" style="color:#111111; text-decoration:underline;">Read it →</a></p>
+</td></tr>
+<!-- FRIDAY_END -->
+
+<!-- FOOTER -->
+<tr><td align="center" style="padding:30px 8px 8px;">
+<p class="hr-txt" style="margin:0 0 6px; font-family:'Space Grotesk',Arial,Helvetica,sans-serif; font-size:22px; font-weight:700; color:#111111;">That's the build. See you tomorrow.</p>
+<p class="hr-muted" style="margin:0; font-family:'JetBrains Mono',Consolas,'Courier New',monospace; font-size:12px; line-height:1.6; color:#3F3F46;">Hot Reload · daily at 08:00 Sofia time</p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>
